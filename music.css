@@ -1,0 +1,98 @@
+body {
+  background: url(./images/music-mind-music-abstract-art-created-with-generative-ai-technology_545448-15311.avif) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+  grid-template-rows: 30rem 30rem;
+  grid-template-columns: 3rem 24rem 24rem 24rem 24rem;
+  margin-top: 1rem;
+}
+
+.box {
+  width: 15rem;
+  height: 23rem;
+  background: none;
+  color: white;
+  font-size: 10rem;
+  border-radius: 1rem;
+}
+
+.h {
+  grid-column: span 4;
+  background-image: url('./images/download__4_-removebg-preview.png');
+  background-size: 15rem 23rem;
+  background-repeat: no-repeat;
+}
+
+.t {
+  grid-column: span 1;
+  background-image: url('./images/download-removebg-preview.png');
+  background-size: 15rem 23rem;
+  background-repeat: no-repeat;
+}
+
+.f {
+  grid-column: span 2;
+  background-image: url('./images/pngtree-chinese-style-musical-instrument-flute-illustration-png-image_4593023-removebg-preview.png');
+  background-size:15rem 23rem;
+  background-repeat: no-repeat;
+}
+
+.d {
+  background-image: url('./images/download__1_-removebg-preview.png');
+  background-size: 15rem 23rem;
+  background-repeat: no-repeat;
+}
+
+.m {
+  background-image: url('./images/download__3_-removebg-preview.png');
+  background-size: 15rem 23rem;
+  background-repeat: no-repeat;
+}
+
+.s {
+  background-image: url('./images/download__2_-removebg-preview.png');
+  background-size: 15rem 23rem;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 600px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr); /* 7 rows for 7 elements */
+    margin-top: 0;
+  }
+
+  .box {
+    width: 10rem; /* Ensure full width */
+    height: 100px;
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+
+  .h, .t, .f, .d, .m, .s {
+    grid-column: span 1; /* Each element takes full column */
+    background-size: contain; /* Adjust to avoid image overflow */
+    background-repeat: no-repeat;
+    margin: 0 auto; /* Center elements */
+  }
+
+  .t {
+    margin-left: 0; /* Reset margin for smaller screens */
+  }
+}
+@media (min-width: 1800px) {
+  body {
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr; /* Layout in a single row for wide screens */
+    margin-top: 1rem;
+  }
+
+  .h, .t, .f, .d, .m, .s {
+    grid-column: span 1;
+    background-size: cover; /* Full coverage for large screens */
+    background-repeat: no-repeat;
+  }
+}
